@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>轮播图</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			#lunbo{
+				width: 700px;
+				height: 300px;
+				margin: 0 auto;
+				position: relative;
+			}
+			#lunbo img{
+				width: 700px;
+				height: 300px;
+			}
+			#lunbo .btn{
+				height: 14px;
+				width: 100%;
+				/* border: 1px solid green; */
+				position: absolute;
+				bottom: 10px;
+				display: flex; /*弹性盒子*/  
+				justify-content: center; /*定位情况下水平居中*/
+			}
+			/* #lunbo .btn ul{
+				display: flex; 
+				height: 14px;
+				justify-content: center;
+			} */
+			#lunbo .btn li{
+				width: 14px;
+				height: 14px;
+				background-color: greenyellow;
+				border-radius: 50%;
+				cursor: pointer; /*鼠标移入手*/
+				margin: 0 5px;
+			}
+			.left{
+				width: 37px;
+				height: 50px;
+				background: url(./img/arrl.png) no-repeat;
+				position: absolute;
+				top: 0px;
+				left: 20px;
+			}
+			.right{
+				width: 37px;
+				height: 50px;
+				background: url(./img/arrl.png) no-repeat;
+				position: absolute;
+				top: 10px;
+				right: 20px;
+			}
+		</style>
+		<script src="../jquery/jquery-1.10.2/jquery.js"></script>
+	</head>
+	<body>
+		<div id="lunbo">
+			<div class="left"></div>
+			<div class="right"></div>
+			<img class="img" src="http://p1.music.126.net/hQWhJM12qZxdOqIm7uRMrg==/109951165790253519.jpg?imageView&quality=89" />
+			<!-- <div class="btn"> -->
+				<ul class="btn">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			<!-- </div> -->
+		</div>
+	</body>
+</html>

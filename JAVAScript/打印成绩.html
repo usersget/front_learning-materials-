@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>19计应2班08陈永泰</title>
+	</head>
+	<body>
+		<script>
+			// //判断大小
+			
+			var Number1=prompt('请输入一个数','');
+			var Number2=prompt('请输入另一个数','');
+			 if (!isNaN(Number1)&&Number1!=''&&!isNaN(Number2)&&Number2!='') {
+				 if (Number1>Number2) {
+				 	document.write(Number1+">"+Number2+'<br />');
+				 }else if(Number1==Number2){
+					 document.write(Number1+"="+Number2+'<br />');
+				 }else{
+					 document.write(Number1+"<"+Number2+'<br />');
+				 }
+			 }
+			 else{
+				 document.write('输入错误<br />');
+			 }
+			 
+			 
+			//成绩打印
+		 var name=prompt('请输入姓名','');
+		 var sex=prompt('请输入性别','');
+		 var ch=prompt('请输入语文成绩','0');
+		 var ma=prompt('请输入数学成绩','0');
+		 if(name!=''&&sex!=''){
+		         if (!isNaN(ch)&&ch!=''&&!isNaN(ma)&&ma!='') {
+			          var sum=parseFloat(ch)+parseFloat(ma);
+                           document.write("姓名："+name+"<br />性别："+sex+"<br />语文："+ch+"<br />数学："+ma+"<br />总成绩："+sum);
+		            }else{
+			 document.write(name+"输入错误");
+		    }
+		 }else{
+			 document.write("姓名或性别输入错误");
+		 }
+		</script>
+	</body>
+</html>
+	

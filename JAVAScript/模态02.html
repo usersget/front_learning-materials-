@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			window.onload=funtion()
+			{
+				dd2.value=window.dialogArguments;
+				dd3.onclick=function(){
+					window.ReturnValue=dd2.value;
+					window.close();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text"id="dd2" />
+		<input type="button"id="dd3" value="回传修改并关闭"/>
+	</body>
+</html>

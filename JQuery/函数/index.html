@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				border: 1px solid blue;
+			}
+		</style>
+		<script src="../jquery/jquery-1.10.2/jquery.js"></script>
+	</head>
+	<body>
+		<select>
+			<option value="老虎">老虎</option>
+			<option value="狮子">狮子</option>
+			<option value="豹子">豹子</option>
+		</select>
+		<br /><br />
+		<select>
+			<option value="美洲">美洲</option>
+			<option value="欧洲">欧洲</option>
+			<option value="亚洲">亚洲</option>
+		</select>
+			<br /><br />
+			<span>我是mysql<b>数据库</b></span>
+			<div id="father">我是第一个div</div>
+				<br /><br />	<br /><br />
+				<input type="button" id="btn1" value="使用remove删除父和子对象" />
+				<br /><br /><br />
+				<input type="button" id="btn2" value="使用empty删除子对象" />
+					<br /><br />
+					<input type="button" id="btn3" value="使用append增加dom对象" /><br /><br />
+						<input type="button" id="btn4" value="获取第一DOM的文本值" />
+						<input type="button" id="btn5" value="获取DOM的文本值" />
+					<script>
+						$(function(){
+							$('#btn1').click(function(){
+								$('select').remove();
+							})
+							
+							$('#btn2').click(function(){
+								$('select').empty();
+							})
+							
+							$('#btn3').click(function(){
+								$('#father').append("<input type='button' id='son' value='我是增加的按钮'/>");
+								$('#son').click(function(){
+									console.log("新增按钮被点击了")
+								})
+							})
+							$('#btn4').click(function(){
+								console.log($('span').html());
+							})
+							$('#btn5').click(function(){
+								console.log($('span').text());
+							})
+						})
+					</script>
+	
+	</body>
+</html>

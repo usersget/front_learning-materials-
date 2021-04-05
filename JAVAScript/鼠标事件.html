@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			//滑过改变图像
+			// var width=200;
+			// window.onload=function(){
+			// 	dog1.onmouseover=function(){//鼠标滑入
+			// 		dog1.src="img/002.jpg";//将第一张照片地址换为第二张
+			// 	}
+			// 	dog1.onmouseout=function(){//鼠标滑出
+			// 		dog1.src="img/001.jpg";//将第一张照片地址换为原地址
+			// 	}
+			// 	dog1.onmousedown=function(){//单击照片
+			// 		alert("汪汪");
+			// 	}
+			// 	dog1.onmousemove=function(){
+			// 		width-=1;
+			// 		dog2.style.width=width;
+			// 	}
+			// }
+			//捕捉鼠标位置
+			window.onload=function(){
+				dog1.onmousemove=function(ev){
+					var oEvent=ev || event;
+					screen_x.value=oEvent.screenX;
+					screen_y.value=oEvent.screenY;
+					offset_x.value=oEvent.offsetX;
+					offset_y.value=oEvent.offsetY;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<img id="dog1" src="img/001.jpg" />
+		<!-- <img id="dog2" src="img/002.jpg" /> -->
+		鼠标在屏幕上的横坐标
+		<input type="text" id="screen_x" />
+		鼠标在屏幕上的纵坐标
+		<input type="text" id="screen_y"/>
+		鼠标在图片上的横坐标
+		<input type="text" id="offset_x" />
+		鼠标在图片上的纵坐标
+		<input type="text" id="offset_y"/>
+	</body>
+</html>

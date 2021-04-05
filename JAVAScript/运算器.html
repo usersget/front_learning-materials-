@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var one =prompt('请输入第一个数','');
+			var two =prompt('请输入第二个数','');
+			var fuhao =prompt('请输入用算符','');
+			if(!isNaN(one)&&one!=''&&!isNaN(two)&&two!=''){
+				var n1=parseFloat(one);
+				var n2=parseFloat(two);
+				var sum=0;
+				switch(fuhao){
+					case'+':sum=n1+n2;break;
+					case'-':sum=n1-n2;break;
+					case'*':sum=n1*n2;break;
+					case'/':
+					    if(n2==0){
+						document.write("除数不能为0");Counter;
+					}
+					else{
+						sum=n1/n2;break
+					}
+					case'%':
+					    if(n2==0){
+						document.write("除数不能为0");Counter;
+					}
+					else{
+						sum=n1%n2;break
+					}
+					default:document.write("符号错误");Counter;
+				}
+					document.write(n1+fuhao+n2+"="+sum);
+			}
+		
+		</script>
+	</body>
+</html>

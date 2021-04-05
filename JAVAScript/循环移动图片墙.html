@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			img{
+				width: 100px;
+				height: 100px;
+				border: 1px solid #999;
+			}
+			ul{
+				list-style-type: none;
+			}
+			li{
+				display: inline;
+				margin: 5px;
+			}
+		</style>
+		
+		<script>
+			window.onload=function(){
+				var ul1=document.getElementById("ul1");
+				window.setInterval(move,1000);
+				function move(){
+					var lis=document.getElementsByTagName("li");
+					ul1.appendChild(lis[0]);
+				}
+			}
+		</script>
+	</head>
+	<body>
+	
+		<ul id="ul1">
+			<li><img src="img/001.jpg"/></li>
+			<li><img src="img/002.jpg"/></li>
+			<li><img src="img/6a512641ab538248b4eec74b1b798d33.jpg"/></li>
+			<li><img src="img/mm_12852562_1778064_13672849.jpg"/></li>
+			<li><img src="img/mm_12852562_1778064_48458242.jpg"/></li>
+		</ul>
+	</body>
+</html>
