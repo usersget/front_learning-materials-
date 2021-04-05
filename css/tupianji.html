@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* 清除网页内自带属性 */
+			*{
+				margin:0;
+				padding:0;
+			}
+			/* 设置正常图片的显示 */
+			img{
+				width:100px;
+				height:75px;
+				border:1px solid #CCCCCC;
+				padding:3px;
+			}
+			li{
+			    float:left;  /*浮动*/ 
+				list-style-type:none;
+				position:relative;/*让li成为a:hover.yc的定位点*/
+				
+			}
+			ul{
+				width:500px;
+				margin:20px auto;/*上下 左右*/
+				
+			}
+			/* 需要变形的照片 */
+			.yc{
+				display:none;  /*隐藏*/
+				position:absolute; /*原始位置将不被保留*/
+			}
+			/* 设置鼠标悬停效果 */
+			a:hover.yc{
+				display:block; /*显示块元素*/
+				position:absolute;
+				top:-35px;
+				left:-40px ;
+				z-index:4;
+				width:150px;
+				height:100px ;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" id="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/photo01.jpg" />
+					<img src="img/photo01.jpg" id="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/photo02.jpg" />
+					<img src="img/photo02.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/photo04.jpg" />
+					<img src="img/photo04.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/photo13.jpg" />
+					<img src="img/photo13.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/board.jpg" />
+					<img src="img/board.jpg" class="yc"/>
+				</a>
+			</li>
+		</ul>
+	</body>
+</html>

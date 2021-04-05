@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				background-color: #ff58db;
+			}
+			div{
+				width:100px;
+				height:100px;
+				float: left;
+			}
+			#box0{
+				
+				width: 200px;
+				height: 200px;
+				text-align: center;
+				
+			}
+			#box1,#box2,#box3,#box4{
+				background-color: forestgreen;
+				box-shadow:2px 3px 4px #959595;
+			}
+			#box1{
+				border-radius:50px 50px 0px 50px;
+				box-shadow: none;
+			}
+			#box2{
+				border-radius:50px 50px 50px 0px;
+			}
+			#box3{
+				border-radius:50px 0px 50px 50px;
+				clear: left;
+			}
+				#box4{
+					border-radius:0px 50px 50px 50px;
+				}
+				#box1:hover,#box2:hover,#box3:hover,#box4:hover{
+					background-color: #009900;
+					width:90px;
+					height:98px;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="box0">
+			<div id="box1"></div>
+			<div id="box2"></div>
+			<div id="box3"></div>
+			<div id="box4"></div>
+		</div>
+	</body>
+</html>
