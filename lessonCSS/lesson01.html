@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en,zh">
+	<head>
+		<meat charset="utf-8">
+			<!-- gb2312  gbk国家拓展标准字体-->
+			<!-- unicod 万国码 ->utf-8 -->
+			<title>淘宝网，淘，我喜欢</title>
+			<style type="text/css">
+				*{
+					margin: 0;
+					padding: 0;
+				}
+				ul{
+					list-style: none;
+				}
+				li{
+					margin: 0 10px;
+					float: left;
+					color:#f40; 
+					font-weight:bold;
+					font-size: 14px;
+                   	height: 25px;
+                   	line-height: 25px;
+                   padding:0 5px;	
+				}
+				li:hover{
+					border-radius:15px; 
+					background-color: #f40;
+					color: #fff;
+				}
+			</style>
+
+	</head>
+	<body>
+		<!-- 协议限定符 <a href="javascript:while(1){alert('让你手欠')}">你试试啊！ come on!</a>-->
+		
+		<address>兰州资源环境</address> <!--地址标签 -->
+         原价<del style="color:#f40 ">￥30</del>现价￥20<!--中划线标签-->
+         <div style="width: 100px;height: 100px;background-color:#f40; ">你好啊</div>
+         <!-- 空格=文本分隔符 -->
+         <!-- HTML边码 （&nbsp;空格）（<&lt；）(>&gt;)-->
+         <hr>
+      <!-- 有序列表<!--reversed="reversed"-->
+         	<!--start="2"从第几个开始排  -->
+	   <!-- <ol type="a">	
+         	<li>塑8</li>
+         	<li>返老还童</li>
+         	<li>marvel</li>
+         </ol> -->
+		 <!-- type="circle "-->
+         <ul >
+         	<li>天猫</li>
+            <li>聚划算</a></li>
+         	<li>天猫超市</a></li>
+         </ul>
+		 <img src="img/photo03.jpg" alt="这是图片"title="这是图片"/>
+		 <!--  alt图片占位符   title图片提示符 -->
+		 <!-- 表单标签method="get"发送数据方式 -->
+		 <form method="get"action="index.html">
+			<p> <!-- 输入框 -->
+			 用户名：<input type="text" name="username"
+			 style="color: #999;" value="请输入用户名" 
+			 onfocus="if(this.value=='请输入用户名'){this.value='';this.style.color='#424242'}"
+			 onblur="if(this.value==''){this.value='请输入用户名';this.style.color='#999';}"/></p>
+			 <p><!-- 密码框 -->
+			 密码：<input type="password"name="password" /></p>
+			 <p>
+				 <!-- 按钮 -->
+				 <input type="submit"/>
+				 <input type="submit"value="取消" />
+			 </p>
+			 你喜欢的地方
+			<!-- 单选框 value值是提交的值-->
+					2.北京 <input type="radio"name="radio1" value="beijin"/>
+					3.浙江 <input type="radio"name="radio1" value="zhejiang"/>
+			 </p>
+		 </form>
+	</body>
+</html>

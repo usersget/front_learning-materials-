@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>清除浮动</title>
+		<style type="text/css">
+			
+				body:after{content:'';display:block;clear:both;}
+			
+			.fl{
+				width: 150px;
+				height: 300px;
+				background-color: #FF0000;
+				float: left;
+				margin-left: 10px;
+			}
+			.big{
+				height: 100px;
+				border: 1px solid #0cf;
+				/* clear: both; */
+			}
+			.f{
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 清除浮动的方法：
+		 1.知道父级具体高度的时候，直接给父级设置高度
+		 2.在浮动元素后面加换行标签 <br clear="all"/>    （缺点：增加多余标签）
+		 3.在浮动元素后面加一个空标签，给空标签名一个class名字
+		 <div class="clearbox/>给样式.clearbox{clear:both;}      （缺点：增加多余标签）
+		 4.给父级设置样式display: inline-block;
+		 5.给父级设置样式overflow: visible;除外 						（缺点：不能设置margin:auto;）
+		 6.给父级设置元素after,::after{content:'';display:block;clear:both;}(推荐)
+		 -->
+		<div class="fl"></div>
+		<div class="fl"></div>
+		<div class="fl"></div>
+		<div class="fl"></div> 
+		<div class="fl"></div>
+		<br class="f" />
+		<div class="big">
+			
+		</div>
+	</body>
+</html>

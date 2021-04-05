@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* @规则
+ @charset   设置样式表的编码
+ @import    导入其他样式文件
+ @meida     媒体查询（移动端查询用户设备）
+ @font-face  自定义字体
+ */
+@import url("../icon/demo.css");
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+      url('iconfont.woff2') format('woff2'),
+      url('iconfont.woff') format('woff'),
+      url('iconfont.ttf') format('truetype'),
+      url('iconfont.svg#iconfont') format('svg');
+}
+#bgi_big{
+	width: 1300px;
+	height: 530px;
+	/* border: 1px solid red; */
+	background-image: url(../img/ia_100000000254.jpg);
+	margin: 0 auto;
+	background-size:100% 100%;
+	background-repead:no-repead;
+	clear: both;
+	padding-top: 120px;
+	padding-left: 60px;
+}
+.logo{
+	/* border: 1px solid red; */
+	width: 300px;
+	height: 120px;
+	float: left;
+	margin-left: 230px;
+}
+.denglu{
+	width: 420px;
+	height: 320px;
+	background-color: #ffffff;
+	float: left;
+	margin-left: 230px;
+}
+.head{
+	width: 200px;
+	/* border: 1px solid red; */
+	margin: 0 auto;
+}
+.head>p{
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 25px;
+	color: #000000;
+}
+.con{
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+	/* border: 1px solid red; */
+}
+.con>a{
+	color: #3481CF;
+	font-size: 16px;
+}
+.one{
+	float: left;
+	width: 89px;
+	height: 89px;
+	margin-top:  50px;
+	margin-left: 80px;
+}
+.two{
+	margin-top:  50px;
+	margin-left: 40px;
+	width: 89px;
+	height: 89px;
+	/* border: 1px solid red; */
+	float: left;
+}
+.fot{
+	height: 30px;
+	/* border: 1px solid red; */
+	float: right;
+	margin-top: 84px;
+}
+.fot a{
+	font-size: 12px;
+	color: #000000;
+	font-family: "微软雅黑";
+}
+form{
+	clear: both;
+}
+td{
+	width: 80px;
+	margin-left: 20px;
+	border-collapse: separate;
+	border-spacing: 10px 5px;
+	vertical-align: top;
+	/* border: 1px solid red; */
+	text-align: center;
+	color: white;
+}
+.font_icon{
+	font-size: 40px;
+}
+.size{
+	font-size: 12px;
+}
+.icone{
+	width: 500px;
+	margin: 0 auto;
+	/* border: 1px solid red; */
+}
+.foot{
+	width: 1000px;
+	margin: 0 auto;
+	/* border: 1px solid red; */
+}
+p{
+	font-size: 12px;
+	color: white;
+	text-align: center;
+}
+.foot a{
+	color: white;
+	text-decoration: none;
+}
+.foot a:hover{
+	text-decoration: underline;
+}

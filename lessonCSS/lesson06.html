@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				
+			}
+			a{
+				/* 去除下划线 */
+				text-decoration: none;
+			}
+			/* 清除浮动流 */
+			.nav::after{
+				content: "";
+				display:block;
+				clear: both;
+			}
+			/* 去除li前小圆点 */
+			.nav{
+				list-style: none;
+			}
+			.nav .list-item{
+				float: left;
+				margin:0 10px;
+				height:30px;
+				line-height: 30px;
+				/* border: 2px solid red; */
+			}
+			.nav .list-item a{
+				padding: 0 5px;
+				color: #f40;
+				font-weight: bold;
+				height: 30px;
+				display: inline-block;
+				border-radius: 10px;
+				
+			}
+			.nav .list-item a:hover{
+				background-color: #f40;
+				color:#fff;
+			}
+			
+			
+/* 			选中伪元素 */
+			span::before{
+				content: 你好;
+			}
+			/* 处理单行文本 */
+			p{
+				width:200px;
+				height: 20px;
+				line-height: 20px;
+				/* border: 1px solid red; */
+				/* 去除文字换行展示 */
+				white-space: nowrap;
+				/* 溢出部分隐藏 */
+				overflow: hidden;
+				/* ...展示 */
+				text-overflow: ellipsis;
+			}
+			/* 处理多行文本pc端只做截断 */
+		/*行级元素只能嵌套行级元素
+		 块级元素可以嵌套任何元素 */
+		</style>
+	</head>
+	<body>
+		<ul class="nav">
+			<li class="list-item"><a href="#">天猫</a></li>
+			<li class="list-item"><a href="#">聚划算</a></li>
+			<li class="list-item "><a href="#">天猫超市</a></li>
+		</ul>
+	<!-- 溢出容器打点展示 
+	1.单行文本
+	2.多行文本
+	-->
+	<p>dfgrtjthytjyjyuykyukukukukuklukukuykuykuyuyujyty</p>
+	</body>
+</html>

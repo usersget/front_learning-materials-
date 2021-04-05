@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.001{
+	/* margin-left: 100px;
+	margin-top: 100px; */
+	width: 100px;
+	height: 100px;
+	border: 20px solid red;
+	background-color: #29FFB1;
+}
+.002{
+	/* margin-left: 50px;
+	margin-top: 150px; */
+	width: 50px;
+	height: 50px;
+	border: 20px solid #ff7700;
+	background-color: #ff007f;
+}

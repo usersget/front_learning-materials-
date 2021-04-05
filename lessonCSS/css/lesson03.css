@@ -1,0 +1,38 @@
+div{
+	position: fixed;
+	left:100px;
+	top: 100px;
+	width: 100px;
+	height: 100px;
+	background-color: #FF4400;
+}
+.doml{
+	position: relative;
+	left: 100px;
+	top: 100px;
+	width: 50px;
+	height: 50px;
+	background-color: #29ffb1;
+}
+/*   #ui{
+   width:0px;
+   height:0px;
+   border:100px solid #00f;
+   border-left-color:transparent ;
+   border-top-color:transparent ;
+   border-bottom-color:transparent ;
+   } */
+   /* CSS权重
+  !important                Infinity
+   行间样式					1000
+   id 						100
+   class|属性|伪类 			10
+   标签|为元素 				1
+   通配符 					0 
+   权重进制                  256进制*/
+   /* 并列选择器div.dome{}*/
+   /* css88.com */
+   /* 互联网通用字体arial */
+/*   red           green        bluer
+   00-ff         00-ff   	      00-ff
+   transparent透明色 */

@@ -1,0 +1,67 @@
+@charset "utf-8";   
+ 
+body{   
+ 
+  font-family: "Lucida sans Unicode", "Lucida Grande", Geneva, sans-serif;   
+  max-width: 880px; /*最大宽度不超过 800 像素*/   
+  margin: 0 auto;
+  border: 1px solid rgba(86, 83, 83, 51);
+}  
+/*页面顶部的标题区样式*/   
+.Header {   
+  background-color: #7695FE; /*可接受任何颜色值*/   
+  border: thin #336699 solid; /*多合一的 border 属性*/   
+  padding: 10px; /* 10像素的内边距，边框与内容之间的距离*/   
+  margin: 10px; /* 10像素的外边距，边框与周围元素之间的距离*/   
+  text-align: center; /*头部文本居中*/   
+}   
+/*页眉中标题<h1>样式*/   
+.Header h1{   
+  margin: 0px;   
+  color: white;   
+  font-size: xx-large; /*精确控制可以用像素或者em单位*/   
+}   
+/*页眉中子标题样式*/   
+.Header .Teaser{   
+  margin: 0px;   
+  font-weight: bold;   
+}   
+/*页眉中署名行样式*/   
+.Header .Byline{   
+  font-style: italic;   
+  font-size: small;   
+  margin: 0px;   
+}   
+.Content{   
+  font-size: medium;   
+  font-family: Cambria, Cochin, Georgia, "Times New Roman", Times, serif;   
+  /*左右内边距最大*/   
+  padding-top: 20px;   
+  padding-right: 50px;   
+  padding-bottom: 5px;   
+  padding-left: 50px;   
+  line-height: 120%; /*相邻两个文本行之间的距离*/   
+}   
+.Content .LeadIn{   
+  font-weight: bold;   
+  font-size: large;   
+  font-variant: small-caps;   
+}   
+.Content .h2{   
+  color: #24486C;   
+  margin-bottom: 2px;   
+  font-size: medium;   
+}   
+.Content p{   
+  margin-top: 0px;   
+}   
+.Footer{   
+  text-align: center;   
+  font-size: x-small;   
+}   
+.Footer .Disclaimer{   
+  font-style: italic;   
+}   
+.Footer p{   
+  margin: 3px;   
+}  
